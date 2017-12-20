@@ -122,12 +122,22 @@ button {
 
 label.light {
   display: inline;
-  font-size: 0.85rem;
+  font-size: 0.80rem;
 }
 
 textarea {
   height: 6rem;
   margin-bottom: 1rem;
+}
+
+.newsletter-section input {
+  width: 5% !important;
+  height: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+  text-align: left;
 }
 
 

@@ -101,24 +101,23 @@
             <label for="">Zip Code</label>
             <input type="" id="zip" name="">
           </fieldset>
-              <legend class="newsletter-title"><h2>Newsletter</h2></legend>
-              <p class="newsletter">Select the newsletters you would like to recieve</p>
+          <section class="newsletter-section">
+            <legend class="newsletter-title"><h2>Newsletter</h2></legend>
+            <p class="newsletter">Select the newsletters you would like to recieve</p>
 
-          <fieldset>
-            <input type="checkbox" id="news" value="interest_news" name="user_interest"><label class="light" for="news">HTML news</label><br>
-            <input type="checkbox" id="news" value="interest_news" name="user_interest"><label class="light" for="news">CSS news</label><br>
-            <input type="checkbox" id="news" value="interest_news" name="user_interest"><label class="light" for="news">JavaScript news</label>
+            <fieldset class="input-check">
+              <input type="checkbox" id="toggle" value="interest_news" name="user_interest"><label class="light" for="toggle">HTML news</label><br>
+              <input type="checkbox" id="news" value="interest_news" name="user_interest"><label class="light" for="news">CSS news</label><br>
+              <input type="checkbox" id="news" value="interest_news" name="user_interest"><label class="light" for="news">JavaScript news</label>
 
-            <p>Newsletter format</p>
-            <input type="radio" id="news" value="interest_news" name="user_interest"><label class="light" for="news">HTML</label><br>
-            <input type="radio" id="news" value="interest_news" name="user_interest"><label class="light" for="news">Plain Text</label><br>
+              <p class="newsletter">Newsletter format</p>
+              <input type="radio" id="news" value="interest_news" name="user_interest"><label class="light" for="news">HTML</label><br>
+              <input type="radio" id="news" value="interest_news" name="user_interest"><label class="light" for="news">Plain Text</label><br>
 
-            <p>Other topics you'd like to hear about</p>
-            <textarea id="comment" name="user_comment"></textarea>
-
-
-
-          </fieldset>
+              <p>Other topics you'd like to hear about</p>
+              <textarea id="comment" name="user_comment"></textarea>
+            </fieldset>
+          </section>
         <button type="submit">SIGN UP</button>
         <p id="footer">Copyright The Code Review</p>
       </form>
