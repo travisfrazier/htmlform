@@ -9,6 +9,8 @@ function checkFormInputs() {
   var cityInputField = document.querySelector('#city');
   var stateSelect = document.querySelector('#state');
   var zipInputField = document.querySelector('#zip');
+  var radios = document.getElementsByName('format');
+  var newsLetter = document.getElementsByName('user_interest');
 
   var values = [nameInputField, emailInputField, numberInputField, cityInputField, stateSelect, zipInputField];
   var errorFound = false;
@@ -23,6 +25,17 @@ function checkFormInputs() {
       field.classList.remove('error');
     }
   }
+
+  // Newsletter validation
+  var formValid = false;
+  var i = 0;
+  while (!formValid && i < newsLetter.length || i < radios.length) {
+      if (newsLetter[i].checked && radios[i].checked) formValid = true;
+      i++;        
+  }
+
+  if (!formValid) alert("Please choose your options");
+  return formValid;
 
   // Check if any field had an error, if not, submit data somewhere
   if (!errorFound) {
