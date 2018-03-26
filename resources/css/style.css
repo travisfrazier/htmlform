@@ -1,4 +1,7 @@
 /* Universal Styles ----- */
+.error {
+  border: 1.5px solid red !important;
+}
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
